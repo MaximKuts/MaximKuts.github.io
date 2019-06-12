@@ -1,0 +1,38 @@
+
+.square {
+width: 300px;
+height: 300px;
+ position: relative;
+ margin-left: 100px;
+ margin-top:100px;
+ 
+ }
+ .square1,
+ .square2,
+ .square3,
+ .square4{
+   background-image: url(https://lite.vesti-ukr.com/img/article/3137/93_main.jpeg);
+   border: 1px solid #ccc;
+   width: 300px;
+   height: 300px;
+   position: absolute;   
+   transition: all 1s ease 0s;
+   border: solid 2px  black;
+ }
+ .square1{transform: rotateZ(30deg);opacity: 0.7;}
+ .square2{transform: rotateZ(40deg);opacity: 0.7;}
+ .square3{transform: rotateZ(50deg);opacity: 0.7;}
+ .square4:hover{
+   -webkit-transform: scale(0.5);
+   -ms-transform: scale(0.5);
+   transform: scale(0.5);  
+   transition: all 1s ease 0s
+ }
+.square1:hover,
+.square2:hover,
+.square3:hover {
+   -webkit-transform: rotateZ(20deg);
+   -ms-transform: rotateZ(20deg);
+   transform: rotateZ(20deg);
+   -webkit-transition: all 1s ease 0s
+ }
